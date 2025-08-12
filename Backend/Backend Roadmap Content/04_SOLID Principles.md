@@ -1,4 +1,4 @@
-## Single Responsibility Principles (S.R.P).
+## Single Responsibility Principles (S.R.P)
 
 ## Open / Closed
 
