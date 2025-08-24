@@ -1,11 +1,13 @@
 
 |             Task             |             Linked Page             |                   Local Articles                    |                                        Link                                        |     Status      |
-| :--------------------------: | :---------------------------------: | :-------------------------------------------------: | :--------------------------------------------------------------------------------: | :-------------: |
+|:----------------------------:|:-----------------------------------:|:---------------------------------------------------:|:----------------------------------------------------------------------------------:|:---------------:|
 |    Var and Let and Const     |  [[01_Var and let and const diff]]  |   [[Var, Let, and Const – What's the Difference]]   |     https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/      |      Done       |
 | TypeScript Language Features | [[02_TypeScript Language Features]] | [[Learn Object-Oriented Programming in TypeScript]] | https://www.freecodecamp.org/news/learn-object-oriented-programming-in-typescript/ |      Done       |
 |             OOP              |  [[03_OOP Principles Typescript]]   | [[Learn Object-Oriented Programming in TypeScript]] | https://www.freecodecamp.org/news/learn-object-oriented-programming-in-typescript/ |   In Progress   |
 |            SOLID             |       [[04_SOLID Principles]]       |                                                     |                                                                                    | Not Started Yet |
 |        DRSIGN PATTEN         |                                     |                                                     |                                                                                    | Not Started Yet |
 |        System Design         |                                     |                                                     |                                                                                    |                 |
+|       nodejs concepts        |                                     |                                                     |                                                                                    |                 |
+|         Rest vs SOAP         |                                     |                                                     |                                                                                    |                 |
 |            Cloud             |                                     |                                                     |                                                                                    |                 |
 |                              |                                     |                                                     |                                                                                    |                 |
