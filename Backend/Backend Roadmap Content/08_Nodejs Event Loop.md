@@ -1,0 +1,1 @@
+The Node.js event loop is a fundamental mechanism that enables Node.js to handle asynchronous operations efficiently in a non-blocking, single-threaded environment.
