@@ -26,5 +26,13 @@ if C is a subtype of P, then objects of type P may be replaced with objects of t
 
 ![[CleanShot 2025-08-27 at 15.42.42.png]]
 ## Interface Segregation
+![[CleanShot 2025-08-27 at 15.46.52.png]]
 
+![[CleanShot 2025-08-27 at 15.48.03.png]]
+```typescript title:interface-segregation.ts
+interface TaskManger{
+void createTask(taskName:string)
+
+}
+```
 ## Dependency Inversion
