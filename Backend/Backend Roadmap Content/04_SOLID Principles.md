@@ -22,7 +22,61 @@ The idea is that a class, once implemented, should be closed for any further mod
 
 ## Liskov Substitution 
 if C is a subtype of P, then objects of type P may be replaced with objects of type C without altering any of the desirable properties of the program
-![[CleanShot 2025-08-27 at 15.41.38.png]]
+```typescript title:liskov-violation.ts
+class Employee {
+
+readonly name: string;
+
+protected hoursWorked: number;
+
+  
+
+constructor(name: string, hoursWorked: number) {
+
+this.name = name;
+
+this.hoursWorked = hoursWorked;
+
+}
+
+  
+
+calculateSalary(): number {
+
+return this.hoursWorked * 10;
+
+}
+
+}
+
+  
+
+class FullTimeEmployee extends Employee {
+
+// Override the parent implementation
+
+override calculateSalary(): number {
+
+// maybe full-time employees get a fixed bonus
+
+return this.hoursWorked * 15 + 500;
+
+}
+
+}
+
+  
+
+class PartTimeEmployee extends Employee{
+
+override calculateSalary():number{
+
+return this.hoursWorked *8;
+
+}
+
+}
+```
 
 ![[CleanShot 2025-08-27 at 15.42.42.png]]
 ## Interface Segregation
