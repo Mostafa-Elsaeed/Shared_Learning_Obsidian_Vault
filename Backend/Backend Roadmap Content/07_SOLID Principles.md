@@ -274,13 +274,13 @@ class OrderMongoDataAccess implements DataProvider {
 class OrderMangementService {
 	private dataProvider:DataProvider;
 	
-	
-	BusinessLogic(){
-		this.orderDataAccess=new OrderDataAccess();
+	constructor(dataProvider:DataProvider){
+		this.dataProvider=dataProvider;
 	}
 	
+	
 	doBusinessLogic(){
-		orderDataAccess.getchOrders();
+		dataProvider.fetchData();
 	}
 }
 ```
