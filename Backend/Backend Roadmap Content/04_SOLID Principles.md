@@ -22,7 +22,9 @@ The idea is that a class, once implemented, should be closed for any further mod
 
 ## Liskov Substitution 
 if C is a subtype of P, then objects of type P may be replaced with objects of type C without altering any of the desirable properties of the program
+![[CleanShot 2025-08-27 at 15.41.38.png]]
 
+![[CleanShot 2025-08-27 at 15.42.42.png]]
 ## Interface Segregation
 
 ## Dependency Inversion
