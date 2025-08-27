@@ -236,7 +236,22 @@ console.log(taskName,assigne);
 ## Dependency Inversion
 
 ```typescript title:dependency-inversion-violation.ts
+class OrderDataAccess{
+	fetchOrders(){
+	}
+}
 
+class OrderMangementService{
+	private orderDataAccess:OrderDataAccess;
+	
+	BusinessLogic(){
+		this.orderDataAccess=new OrderDataAccess();
+	}
+	
+	doBusinessLogic(){
+		orderDataAccess.getchOrders();
+	}
+}
 ```
 
 ```typescript title:dependency-inversion.ts
