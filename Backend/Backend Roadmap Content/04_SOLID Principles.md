@@ -21,6 +21,7 @@ The core meaning of the Open/Closed principle is made clear by the statement:
 The idea is that a class, once implemented, should be closed for any further modification. If any more functionality is needed, it can be added later using extension features such as **inheritance**. This is primarily done to avoid breaking existing code and unit tests. It also results in a modular code.
 
 ## Liskov Substitution 
+if C is a subtype of P, then objects of type P may be replaced with objects of type C without altering any of the desirable properties of the program
 
 ## Interface Segregation
 
