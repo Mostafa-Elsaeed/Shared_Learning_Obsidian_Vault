@@ -1,6 +1,24 @@
 ## Single Responsibility Principles (S.R.P)
+This principle states that every method/class should handle a single responsibility. This is important because it results in better readability of code and separation of concerns.
+```typescript title:single-responsability.ts
 
+const fetchPosts = async (userId: number) => {
+  try {
+    const response = await fetch(
+      `https://jsonplaceholder.typicode.com/users/${userId}/posts`
+    );
+    return await response.json();
+  } catch (e) {
+    handleError(e, "Error while fetching Posts!");
+  }
+};
+```
+---
 ## Open / Closed
+
+The core meaning of the Open/Closed principle is made clear by the statement: 
+*open to extension, closed for modification.*
+The idea is that a class, once implemented, should be closed for any further modification. If any more functionality is needed, it can be added later using extension features such as **inheritance**. This is primarily done to avoid breaking existing code and unit tests. It also results in a modular code.
 
 ## Liskov Substitution 
 
