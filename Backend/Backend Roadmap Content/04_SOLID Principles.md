@@ -26,12 +26,80 @@ if C is a subtype of P, then objects of type P may be replaced with objects of t
 
 ![[CleanShot 2025-08-27 at 15.42.42.png]]
 ## Interface Segregation
-![[CleanShot 2025-08-27 at 15.46.52.png]]
 
-![[CleanShot 2025-08-27 at 15.48.03.png]]
+```typescript title:interface-segregation-violation.ts
+
+interface TaskManger{
+
+createTask(taskName:string):void;
+
+assignTask(taskName:string,assigne:string):void;
+
+sendNotification(message:string,recipient:string):void;
+
+}
+
+  
+
+class TaskService implements TaskManger{
+
+createTask(taskName:string){
+
+console.log(taskName);
+
+}
+
+  
+
+assignTask(taskName:string,assigne:string){
+
+console.log(taskName,assigne);
+
+}
+
+  
+
+sendNotification(message:string,recipient:string){
+
+console.log(message,recipient);
+
+}
+
+}
+```
+
 ```typescript title:interface-segregation.ts
 interface TaskManger{
-void createTask(taskName:string)
+
+createTask(taskName:string):void;
+
+assignTask(taskName:string,assigne:string):void;
+
+}
+
+interface NotificationManger{
+
+sendNotification(message:string,recipient:string):void;
+
+}
+
+  
+
+class TaskService implements TaskManger{
+
+createTask(taskName:string){
+
+console.log(taskName);
+
+}
+
+  
+
+assignTask(taskName:string,assigne:string){
+
+console.log(taskName,assigne);
+
+}
 
 }
 ```
