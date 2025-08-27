@@ -255,5 +255,32 @@ class OrderMangementService{
 ```
 
 ```typescript title:dependency-inversion.ts
+interface DataProvider{
+	fetchData():void;
+}
 
+class OrderMySqlDataAccess implements DataProvider {
+	fetchData():void{
+	
+	}
+}
+
+class OrderMongoDataAccess implements DataProvider {
+	fetchData():void{
+	
+	}
+}
+
+class OrderMangementService {
+	private dataProvider:DataProvider;
+	
+	
+	BusinessLogic(){
+		this.orderDataAccess=new OrderDataAccess();
+	}
+	
+	doBusinessLogic(){
+		orderDataAccess.getchOrders();
+	}
+}
 ```
