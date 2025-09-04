@@ -9,7 +9,8 @@ The event-driven model is very efficient and allows NodeJS to handle thousands o
 Node.js uses two concepts
 - Non-blocking I/O
 - Asynchronous
-![[Pasted image 20250825235512.png]]
+[[Non-Blocking I-o image.png]]
+![[Non-Blocking I-o image.png]]
 Whenever a client sends a request the single thread will send that request to someone else. The current thread will not be busy working with that request. There are workers working for the server. The server sends the request to the worker, the worker further sends it to the other server and waits for the response. In the meantime if there is another request the thread will send it to another worker and the worker will wait for the response from the another server.
 
 In this way the single thread will always be available to take the requests from the client. It will not block the requests.
