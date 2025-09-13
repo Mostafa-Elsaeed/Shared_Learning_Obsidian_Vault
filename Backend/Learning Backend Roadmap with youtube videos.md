@@ -1,0 +1,4 @@
+- typescript basics
+- typescript language features (class - object - interface - abstract class)
+- database basics
+- nestjs
