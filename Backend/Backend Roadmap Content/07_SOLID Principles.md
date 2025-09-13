@@ -101,9 +101,7 @@ if C is a subtype of P, then objects of type P may be replaced with objects of t
 	}
 
 	calculateSalary(): number {
-
 		return this.hoursWorked * 10;
-
 	}
 }
 

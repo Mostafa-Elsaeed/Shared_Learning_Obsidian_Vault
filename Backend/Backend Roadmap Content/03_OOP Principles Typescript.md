@@ -72,13 +72,11 @@ currentAccount.withdraw(250); // balance: -50
 
 class Player{
 
-constructor(public name:string){}
+	constructor(public name:string){}
 
-attack():void{
-
-console.log('attacking now');
-
-}
+	attack():void{
+		console.log('attacking now');
+	}
 
 }
 
@@ -87,21 +85,15 @@ console.log('attacking now');
 
 class Amazon extends Player{
 
-constructor(name:string,public spears:number){
+	constructor(name:string,public spears:number){
+		super(name);
+	}
 
-super(name);
-
-}
-
-override attack():void{
-
-super.attack()
-
-console.log('attacking with spears');
-
-this.spears -=1;
-
-}
+	override attack():void{
+		super.attack()
+		console.log('attacking with spears');
+		this.spears -=1;
+	}
 
 }
 
@@ -109,23 +101,16 @@ this.spears -=1;
 
 class Barbarian extends Player{
 
-constructor(name:string,public axeHealth:number){
-
-super(name);
-
-}
+	constructor(name:string,public axeHealth:number){
+		super(name);
+	}
 
   
-
-override attack():void{
-
-super.attack()
-
-console.log('attacking with axe');
-
-this.axeHealth -=1;
-
-}
+	override attack():void{
+		super.attack()
+		console.log('attacking with axe');
+		this.axeHealth -=1;
+	}
 
 }
 
