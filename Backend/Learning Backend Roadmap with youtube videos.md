@@ -1,4 +1,4 @@
 - typescript basics
 - typescript language features (class - object - interface - abstract class)
-- database basics
+- database basics (selection - insertion - update - delete)
 - nestjs
